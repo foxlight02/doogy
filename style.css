@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,800;1,100;1,200;1,300;1,800&display=swap');
+
+
+/*   Reset  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Main Styling */
+html,
+body {
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+
+
+/* cabezera */
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 1.7em;
+    margin: 10px 0;
+    color: #555;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+/* Utility Classes  */
+.container {
+    margin: auto;
+    max-width: 1300px;
+    overflow: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1 ;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    /*centrea la imagen*/
+    flex-wrap: wrap;
+    /*  nos permite controlar el elemento cuando supere el ancho del contenedor.*/
+    justify-content: space-around;
+    /* deja un spacio alredor de la imagen */
+}
+
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+
+.col-2 h1 {
+
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 30px;
+    transition: background 0.5;
+}
+
+.btn:hover {
+    background: #563434;
+    /*boton cambiara de color*/
+}
+
+.header {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+
+.header .row {
+    margin-top: 70px;
+}
+
+/* featured categories */
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+
+    width: 100%;
+}
+
+/* Featured Products */
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    /*  */
+}
+
+.col-4 img {
+
+    width: 100%;
+
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    /*  */
+    line-height: 60px;
+    /*  */
+    color: #555;
+}
+
+.title::after {
+    /*  */
+    content: '';
+    /*  */
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    /*  */
+    bottom: 0;
+    /*  */
+    left: 50%;
+    /*  */
+    transform: translateX(-50%);
+    /*  */
+}
+
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p {
+
+    font-size: 18px;
+
+}
+
+.rating {
+    color: #ff523b;
+}
+
+
+.col-4:hover {
+    /*  */
+    transform: translateY(-5px);
+    /*  */
+}
+
+/* offer */
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img {
+    padding: 50px;
+}
+
+small {
+    color: #555;
+}
+
+
+/* testimonial */
+
+.testimonial {
+    padding-top: 100px;
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    /*crea unos bordes q le da un relieve suave  */
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+}
+
+.bi-quote {
+    font-size: 34px;
+    color: orange;
+}
+
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0px;
+    color: #777;
+}
+
+.testimonial .col-3 h3 {
+
+    font-weight: 600px;
+    color: #555;
+    font-size: 15px;
+
+}
+
+/*  brands  */
+
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+}
+
+
+/* footer */
+
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+.app-logo img {
+    width: 140px;
+}
+
+
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+    /* media queries responsive */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 120px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+    }
+    
+    .menu-icon {
+	display: block;
+        cursor: pointer;
+}
+}
+
+
+@media only screen and (max-width:600px){
+    
+    .row {
+	text-align: center;
+}
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}
